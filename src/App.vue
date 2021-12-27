@@ -1,5 +1,6 @@
 <template>
   <!-- Navbar atas -->
+  <section>
   <div class="header-area" id="nav">
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
       <div class="container">
@@ -16,34 +17,42 @@
             <!-- Nav Link Fullscreen -->
             <router-link to="/" class="nav-item nav-link navbar-collapse fs-4 mx-2 nav-fill active"
               data-target="#navbarSupportedContent">Home</router-link>
-            <router-link to="/Doctors" class="d-none d-sm-block nav-item nav-link navbar-collapse fs-4 mx-2"
+            <router-link to="/Doctors" class="nav-item nav-link navbar-collapse fs-4 mx-2"
               data-target="#navbarSupportedContent">Doctors</router-link>
             <router-link to="/Contact" class="nav-item nav-link navbar-collapse fs-4 mx-2"
               data-target="#navbarSupportedContent">Contact</router-link>
-            <router-link to="/About" class="nav-item nav-link fs-4 mx-2 mr-5" data-target="#navbarSupportedContent">
+            <router-link to="/About" class="nav-item nav-link navbar-collapse fs-4 mx-2" data-target="#navbarSupportedContent">
               About</router-link>
 
             <!-- Nav Link Collapsed -->
-            <router-link to="/" class="d-block d-sm-none fs-4 mx-2" data-toggle="collapse"
+            <router-link to="/" class="d-none fs-4 mx-2" data-toggle="collapse"
               data-target="#navbarSupportedContent">Home</router-link>
-            <router-link to="/Doctors" class="d-block d-sm-none fs-4 mx-2" data-toggle="collapse"
+            <router-link to="/Doctors" class="d-none fs-4 mx-2" data-toggle="collapse"
               data-target="#navbarSupportedContent">Doctors</router-link>
-            <router-link to="/Contact" class="d-block d-sm-none fs-4 mx-2" data-toggle="collapse"
+            <router-link to="/Contact" class="d-none fs-4 mx-2" data-toggle="collapse"
               data-target="#navbarSupportedContent">Contact</router-link>
-            <router-link to="/About" class="d-block d-sm-none fs-4 mx-2" data-toggle="collapse"
+            <router-link to="/About" class="d-none fs-4 mx-2" data-toggle="collapse"
               data-target="#navbarSupportedContent">About</router-link>
 
             <!-- Search bar -->
             <form class="form-inline my-2 my-lg-1">
-              <input class="form-control mr-sm-2" type="search" placeholder="Search">
-              <button class="btn btn-outline-primary my-sm-0" type="submit">Search</button>
+              <input class="d-lg-none d-xl-block form-control mr-sm-2 mx-2" type="search" placeholder="Search">
+              <input class="d-none d-lg-block d-xl-none form-control mr-sm-2 mx-2" type="search" placeholder="Enter to Search">
+              <button class="d-lg-none d-xl-block btn btn-outline-primary my-2 mx-2" type="submit">Search</button>
             </form>
           </div>
         </div>
       </div>
     </nav>
   </div>
+  </section>
   <router-view />
+
+  <section>
+    <div class="footer">
+      © 2021-2022
+    </div>
+  </section>
 </template>
 
 <script>
@@ -100,4 +109,8 @@ export default {
   color: white;
 }
 
-</style>
+.footer {
+  padding-block: 2em;
+}
+
+</style>z

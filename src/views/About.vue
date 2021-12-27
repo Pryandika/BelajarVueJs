@@ -10,8 +10,10 @@
   </section>
   <!-- Content -->
   <section>
-      <h5 align="middle" class="my-5">Website ini mulai dibangun pada Desember 2021</h5>
-  </section>>
+      <h5 align="middle" class="my-5">Website ini mulai dibangun pada Desember 2021.</h5>
+      <h5 align="middle" class="my-4">Lihat pengembangan website ini di GitHub: 
+        <a href="https://github.com/Pryandika/BelajarVueJs">(Source)</a> <a href="https://github.com/signnd/BelajarVueJs-n">(Fork)</a></h5>
+  </section>
 </template>
 
 
