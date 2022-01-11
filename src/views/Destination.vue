@@ -586,7 +586,8 @@ export default {
                 rsmangusadabadung: require('@/assets/rumahsakit/rs-mangusada-badung.jpeg'),
                 rssiloamkuta: require('@/assets/rumahsakit/rs-siloam-kuta-2.jpg'),
                 rsptnunud: require('@/assets/rumahsakit/rsptn-unud.jpeg'),
-                rsprimamedika: require('@/assets/rumahsakit/primamedika-2.png'),                rskasihibudps:require('@/assets/rumahsakit/rs-kasihibu-dps.jpg'),
+                rsprimamedika: require('@/assets/rumahsakit/primamedika-2.png'),                
+                rskasihibudps:require('@/assets/rumahsakit/rs-kasihibu-dps.jpg'),
                 rskasihibusaba: require('@/assets/rumahsakit/rs-kasihibu-saba.jpg'),
                 rsramata: require('@/assets/rumahsakit/rs-ramata.jpg'),
                 rsbhayangkara: require('@/assets/rumahsakit/rs-bhayangkara.jpg'),
@@ -596,10 +597,43 @@ export default {
                 apple: require('@/assets/modal/apple.png'), 
                 playstore: require('@/assets/modal/playstore.png'), 
                 speedid: require('@/assets/modal/SpeedID.png')           
-            }
-        }
+              },
+          data: {
+					tlokasi: "",
+					userid: 0
+				},
+				methods: {
+					allRecords: function(){
+						
+						axios.get('ajaxfile.php')
+						.then(function (response) {
+						    app.users = response.data;
+						})
+						.catch(function (error) {
+						    console.log(error);
+						});
+					},
+					recordByID: function(){
+						if(this.userid > 0){
+							
+							axios.get('ajaxfile.php', {
+							    params: {
+							      	userid: this.userid
+							    }
+							})
+						  	.then(function (response) {
+						    	app.users = response.data;
+						  	})
+						  	.catch(function (error) {
+						    	console.log(error);
+						  	});
+						}
+						
+					}
+				}
+          }
+       }
     }
-}
 </script>
 
 <style>
