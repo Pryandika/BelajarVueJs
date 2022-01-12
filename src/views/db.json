@@ -1,0 +1,18 @@
+{
+  "dokter": [
+    {
+      "id": 1,
+      "title": "Dokter Kulit"
+    },
+    {
+      "id": 2,
+      "title": "Dokter Mata"
+    }
+  ],
+  "bmta": [
+    {
+      "id": 1,
+      "kabupaten": "Denapsar"
+    }
+  ]
+}

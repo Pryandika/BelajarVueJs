@@ -1,0 +1,18 @@
+{
+  "dokter": [
+    {
+      "id": 1,
+      "nama": "Dokter Mata"
+    },
+    {
+      "id": 2,
+      "nama": "Dokter Kulit"
+    }
+  ],
+  "lokasi": [
+    {
+      "id": 1,
+      "kabupate": "denpasar"
+    }
+  ]
+}

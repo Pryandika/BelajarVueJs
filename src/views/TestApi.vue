@@ -1,6 +1,7 @@
 <template>
 <div id="app">
     <h1 class="pt-5 mt-5 py-5">
+      TEST API<br>
       Currently in {{location}}
     </h1>
     <img src="" alt="wicon" id="wicon"><b>{{temp}}</b>
@@ -33,6 +34,7 @@ export default {
         this.feels_like = response.data.main.feels_like;
         this.temp = response.data.main.temp;
         this.data = response.data;
+        console.log(this.weather)
         console.log(this.data)
         var micon = "https://openweathermap.org/img/wn/" + this.simbol + "@2x.png";
         document.getElementById("wicon").src = micon;

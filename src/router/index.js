@@ -15,6 +15,7 @@ import Olahraga from '../views/Blog/Olahraga.vue'
 import RSUPSanglah from '../views/Destination/rsup-sanglah.vue'
 import RSUBM from '../views/Destination/rsu-balimandara.vue'
 import RSMBM from '../views/Destination/rsm-balimandara.vue'
+import ApiLocal from '../views/ApiLocal.vue'
 import RSPTNUnud from '../views/Destination/rsptn-unud.vue'
 import RSMangusadaBadung from '../views/Destination/rs-mangusada-badung.vue'
 import RSBIMCNusadua from '../views/Destination/rs-bimc-nusadua.vue'
@@ -65,6 +66,11 @@ const routes =
       path: '/services',
       name: 'services',
       component: Services
+    },
+    {
+      path: '/apilocal',
+      name: 'apilocal',
+      component: ApiLocal
     },
   //   { path: '/Destination/rsup-sanglah', name: 'Destination/rsup-sanglah', component: RSUPSanglah },
   // nanti struktur link untuk RS sanglah pake yang kayak di atas
