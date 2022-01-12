@@ -257,12 +257,12 @@
   <div class="container-fluid">
     <img class="dest-img" :src="selectedBanner.img">
       </div>
-    <div class="container destination">
-      <h2 class="text-black font-weight-bold dest-text pt-4">{{selectedBanner.label}}</h2>
-      <p class="text-black text-justify dest-text">{{selectedBanner.deskripsi}}</p>
+    <div class="destination">
+      <h2 class="px-5 text-black text-left font-weight-bold dest-text pt-4">{{selectedBanner.label}}</h2>
+      <p class="px-5 text-black text-justify dest-text">{{selectedBanner.deskripsi}}</p>
       <br>
-      <h4 class="text-black">Destinasi Lainnya </h4>
-      <router-link to="/Destination" class="btn btn-outline-primary text-wrap dest-text">Lihat Semua ►
+      <h4 class="px-5 text-black text-left">Destinasi Lainnya </h4>
+      <router-link to="/Destination" class="btn btn-outline-primary text-wrap dest-text-sm">Lihat Semua ►
       </router-link>
       <div class="pb-2"></div>
     </div>
@@ -595,6 +595,13 @@ export default {
   position:relative;
   min-width: 100%;
   width: 100%;
+  max-height: 100%;
+}
+
+.dest-text-sm{
+  position:relative;
+  min-width: 90%;
+  width: 85%;
   max-height: 100%;
 }
 
