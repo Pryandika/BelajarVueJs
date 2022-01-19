@@ -1,6 +1,6 @@
 <template>
     <div class="pt-5 mt-5">
-      {{responses}}
+      <li v-for="name in responses" :key="name">{{name.name}}</li>
     </div>
 </template>
 
