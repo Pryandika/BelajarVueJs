@@ -38,7 +38,7 @@
       </div>
       <div class="col-2">
         <router-link :to="{name: 'Destination'}">
-          <button type="button" class="btn btn-md btn-block btn-outline-light">Search</button>
+          <button type="button" class="btn btn-md btn-block btn-primary">Search</button>
         </router-link>
       </div>
     </div>

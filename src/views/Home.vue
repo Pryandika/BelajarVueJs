@@ -10,7 +10,7 @@
         <div class="carousel-item active">
           <img class="d-block mt-5 pt-2 w-100" :src="images.cover1" alt="First slide">
           <div class="carousel-caption text-dark">
-              <div class="mt-5"><h1 class="font-weight-bold" style="font-size:5vw;">{{$translate(['Selamat datang','Welcome'])}}</h1></div>
+              <div class="mt-5"><h1 class="font-weight-bold" style="font-size:5vw;">{{$translate(['Selamat Datang','Welcome'])}}</h1></div>
               <p calss="text-justify" style="font-size:2vw;">
                 {{$translate(['Selamat datang di BMTA','Welcome to BMTA'])}}
               </p>
@@ -250,7 +250,7 @@
 </section>
 
 <!-- Popular Destination -->
-<h2 class="font-weight-bold py-3">{{$translate(['Destinasi Populer','Popular Destinations'])}}</h2>
+<h2 class="font-weight-bold py-3 my-3">{{$translate(['Destinasi Populer','Popular Destinations'])}}</h2>
 <div id="stripes" class="d-none d-lg-block">
   <span></span>
   <span></span>
