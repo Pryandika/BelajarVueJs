@@ -1,0 +1,27 @@
+{
+    "status": "OK",
+    "data": {
+        "items": [{
+            "id": 1,
+            "name": "RS. Bakti Bangsa",
+            "description": "Rumah Sakit atau Klinik ini hanya yang digunakan untuk contoh pengoperasian dalam aplikasi ini (Sample)",
+            "address": "Jl. Laksamana No.5X, Sumerta Kelod, Kec. Denpasar Tim., Kota Denpasar, Bali 80239, Indonesia",
+            "lat": -8.666456319368708,
+            "long": 115.2412575110793,
+            "whatsapp": "0361265521",
+            "show_booking_count": true,
+            "logo": null,
+            "distance": 0.3499413545973126,
+            "type": {
+                "name": "Hospital"
+            },
+            "images": ["https://antri.isn-speed.com/storage/gallery/1a.jpg", "https://antri.isn-speed.com/storage/gallery/23-09-2020-13:20:27.jpg", "https://antri.isn-speed.com/storage/gallery/03012022095914.jpg", "https://antri.isn-speed.com/storage/gallery/17012022134254.jpg", "https://antri.isn-speed.com/storage/gallery/10012022151226.jpg"]
+        }],
+        "paging": {
+            "page": 1,
+            "total_page": 1,
+            "item_per_page": 20,
+            "total_item": 1
+        }
+    }
+}

@@ -53,9 +53,7 @@
       <div class="col-3">
         <select class="form-control form-control-md">
           <option hidden>{{$translate(['Kategori','Categories'])}}</option>
-          <option>Klinik</option>
-          <option>Rumah Sakit</option>
-          <option>Apotek</option>
+          <option v-for="kategori in poli" :key="kategori.id">{{kategori.name}}</option>
         </select>
       </div>
       <div class="col-3">
@@ -80,9 +78,7 @@
   </select>
   <select class="form-control form-control-md my-3">
     <option hidden>{{$translate(['Kategori','Categories'])}}</option>
-    <option>Klinik</option>
-    <option>Rumah Sakit</option>
-    <option>Apotek</option>
+    <option v-for="kategori in poli" :key="kategori.id">{{kategori.name}}</option>
   </select>
   <input class="form-control mb-3" type="search" placeholder="Search">
   <router-link :to="{name: 'Destination'}">
@@ -486,14 +482,18 @@
     
     
 <script>
+import json from "@/api/poliRs.json"
+
+import axios from "axios"
 export default {  
   data() {
     return {
+      poli: json.data.items,
       images: {
         cover1: require('@/assets/hero/hero.png'),
         cover2: require('@/assets/hero/hero2.jpg'),
         card1: require('@/assets/gallery/blog1.png'),
-        card2de: require('@/assets/gallery/blog2.png'),
+        card2: require('@/assets/gallery/blog2.png'),
         card3: require('@/assets/gallery/blog3.png'),
         team1: require('@/assets/Team/dr ida ayu oka purnamawati.jpg'),
         team2: require('@/assets/Team/Dr.i gede wiryana patra jaya.jpg'),
@@ -508,6 +508,7 @@ export default {
         partner8: require('@/assets/logors/350x350-08.png'),
         partner9: require('@/assets/logors/350x350-09.png'),
       },
+
     banners: [
         {img: require('@/assets/rumahsakit/bimc-nusa-dua.jpg'), label: 'BIMC Siloam Nusa Dua', deskripsi_en: 'BIMC Siloam Hospital Nusa Dua is an international standard hospital in Bali that provides first-class health services at relatively affordable prices for communities around the Jimbaran, Nusa Dua, Uluwatu and Kampial areas.', deskripsi_id: 'BIMC Siloam Hospital Nusa Dua adalah rumah sakit di Bali bertaraf internasional yang menyediakan layanan kesehatan kelas satu dengan harga yang relative terjangkau bagi masyarakat di sekitar area Jimbaran, Nusa Dua, Uluwatu dan Kampial.'}, 
         {img: require('@/assets/rumahsakit/rs-siloam-kuta.jpg'), label: 'BIMC Siloam Kuta',deskripsi_en: 'Siloam Kuta Bali International Medical Center (BIMC) Hospital is a 24-hour international standard medical and emergency service center. Its strategic location in the Kuta area makes it a preferred health care center that is easily accessible to both locals and tourists.', deskripsi_id: 'Rumah Sakit Bali International Medical Centre (BIMC) Siloam Kuta adalah pusat pelayanan medis dan gawat darurat 24 jam yang berstandar internasional. Lokasinya yang strategis di daerah Kuta menjadikannya sebagai pusat pelayanan kesehatan pilihan yang mudah diakses baik oleh penduduk setempat maupun para wisatawan.'}, 
@@ -527,7 +528,7 @@ export default {
       const {latitude: lat, longitude: lng} = pos.coords
       this.loc.lat = lat
       this.loc.long = lng
-      console.log(this.loc);
+      // console.log(this.loc);
     }, (err) => {
       console.warn(`ERROR(${err.code}): ${err.message}`)
     }, {
@@ -536,15 +537,13 @@ export default {
       maximumAge: 0
     })
   },
+
   created (){
     const idx = Math.floor(Math.random() * this.banners.length)
     this.selectedBanner = this.banners[idx]
+    // console.log(this.selectedBanner)
+  },
 
-    console.log(this.selectedBanner)
-  },
-  methods: {
-      
-  },
   computed: {
     heroImage() {
       return {
@@ -639,13 +638,13 @@ export default {
 }
 
 .carousel-control-prev{
-  margin-top: 10px;
+  margin-top: auto;
   width:20%;
-  height:0px;
+  height:auto;
 }
 
 .carousel-control-next{
-  margin-top: 0px;
+  margin-top: auto;
   width:20%;
   height: auto;   
 }
@@ -689,8 +688,8 @@ export default {
 
 .dest-img{
   position:relative;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .dest-text{

@@ -1,0 +1,62 @@
+{
+    "status": "OK",
+    "data": {
+        "items": [{
+            "id": "1",
+            "name": "Klinik Pratama (Dokter Umum)",
+            "value": "Klinik Pratama"
+        }, {
+            "id": "2",
+            "name": "Spesialis Anak",
+            "value": "Spesialis Anak"
+        }, {
+            "id": "3",
+            "name": "Spesialis Bedah",
+            "value": "Spesialis Bedah"
+        }, {
+            "id": "4",
+            "name": "Spesialis Gigi",
+            "value": "Spesialis Gigi"
+        }, {
+            "id": "5",
+            "name": "Spesialis Kandungan",
+            "value": "Spesialis Kandungan"
+        }, {
+            "id": "7",
+            "name": "Spesialis Kulit dan Kelamin",
+            "value": "Spesialis Kulit dan Kelamin"
+        }, {
+            "id": "8",
+            "name": "Spesialis Laktasi",
+            "value": "Spesialis Laktasi"
+        }, {
+            "id": "9",
+            "name": "Spesialis Saraf dan Neurologi",
+            "value": "Spesialis Saraf dan Neurologi"
+        }, {
+            "id": "10",
+            "name": "Spesialis Psikiater",
+            "value": "Spesialis Psikiater"
+        }, {
+            "id": "12",
+            "name": "Spesialis THT",
+            "value": "Spesialis THT"
+        }, {
+            "id": "13",
+            "name": "Spesialis Mata",
+            "value": "Spesialis Mata"
+        }, {
+            "id": "14",
+            "name": "Spesialis Orthopedi",
+            "value": "Spesialis Orthopedi"
+        }, {
+            "id": "15",
+            "name": "Spesialis Penyakit Dalam",
+            "value": "Spesialis Penyakit Dalam"
+        }, {
+            "id": "16",
+            "name": "Spesialis Jantung dan Pembuluh Darah",
+            "value": "Spesialis Jantung dan Pembuluh Darah"
+        }]
+    }
+}
